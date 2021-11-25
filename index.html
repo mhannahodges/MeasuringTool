@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+	function convertToCN() { 
+	
+	 inches = document.getElementById("inches").value;	 
+	 document.getElementById("result").innerHTML = inches * 1.56; 
+	}
+	</script>
+</head>
+<body style="background-color:black; color:white">
+
+	<h1> Welcome to Measuring tool </h1>
+	
+	Please enter the inches:
+	<input id="inches" style="width:200px"/> 
+	<button onclick="convertToCN();"> Conver to Centimeters </button>
+	
+	<hr/> 
+	
+	<h2> Result </h2> 
+	<div>  Centimeters: 
+	<b> 
+		<span id="result" style="color:yellow">  </span> 
+	</b>
+	</div>
+
+</body>
+</html>
